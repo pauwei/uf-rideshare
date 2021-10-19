@@ -1,0 +1,81 @@
+[
+    {
+        "Name": "Jozee Coyne",
+        "Msg": "Potentially stuck in west palm beach without a ride back up to gainesville, is anyone heading up today? will pay you of course!",
+        "Locations": ["west palm beach"],
+        "Type": "Rider",
+        "Status": "Open"
+    },
+    {
+        "Name": "Mariya Kiraikova",
+        "Msg": "Hey! Is anyone going to South Carolina away game and leaving on Friday (11/5)?",
+        "Locations": ["South Carolina"],
+        "Type": "Rider",
+        "Hours": 10,
+        "Status": "Open"
+    },
+    {
+        "Name": "Bella Addison",
+        "Msg": "Driving to Tampa early morning on Friday, Oct 22 if anyone is looking for a ride!",
+        "Locations": ["Tampa"],
+        "Type": "Driver",
+        "Hours": 14,
+        "Status": "Open"
+    },
+    {
+        "Name": "Ally Salzberg",
+        "Msg": "anyone driving to tampa friday the 22nd after 930 am and coming back before Monday the 25th at 6pm? am vaccinated and willing to pay for gas!",
+        "Locations": ["Tampa"],
+        "Type": "Rider",
+        "Hours": 48,
+        "Status": "Open"
+    },
+    {
+        "Name": "Sarah Rojas Sanchez",
+        "Msg": "Anyone driving from Gainesville Miami tomorrow 10/18",
+        "Locations": ["Gainesville", "Miami"],
+        "Type": "Rider",
+        "Hours": 24,
+        "Status": "Open"
+    },
+    {
+        "Name": "Tarra Walker",
+        "Msg": "Driving to South Florida(Palm City) Wednesday afternoon, the 13th, if anyone needs a ride nearby",
+        "Locations": ["South Florida", "Palm City"],
+        "Type": "Driver",
+        "Hours": 15,
+        "Status": "Open"
+    },
+    {
+        "Name": "Laura Rodriguez",
+        "Msg": "Looking for a ride from Gainesville to Tampa Monday evening or Tuesday from 4pm",
+        "Locations": ["Gainesville", "Tampa"],
+        "Type": "Rider",
+        "Hours": 18,
+        "Status": "Open"
+    },
+    {
+        "Name": "Tree Weldon",
+        "Msg": "If anyone needs a ride later today or tonight (Monday) from Gainesville to Atlanta, hmu\n\nFully vaccinated, mask wearing safe driver with a comfy car and nice sound system",
+        "Locations": ["Gainesville", "Atlanta"],
+        "Type": "Driver",
+        "Hours": 14,
+        "Status": "Open"
+    },
+    {
+        "Name": "Meredith Barber",
+        "Msg": "We have a car service from Tampa Airport to Gainesville at 3:30pm on 11/28 if anyone wants to share the ride. Room for 1 person!!",
+        "Locations": ["Gainesville", "Tampa"],
+        "Type": "Driver",
+        "Hours": 16,
+        "Status": "Open"
+    },
+    {
+        "Name": "Monica Palumbo",
+        "Msg": "Good morning - Is anyone driving from Gainesville to Tampa this Friday or Saturday? thanks",
+        "Locations": ["Gainesville", "Tampa"],
+        "Type": "Rider",
+        "Hours": 20,
+        "Status": "Open"
+    }
+]

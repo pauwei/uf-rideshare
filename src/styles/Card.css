@@ -1,0 +1,16 @@
+#postlist li {
+    list-style-type: none,
+}
+
+.ridearticle {
+    padding: 12px 12px;
+    margin-top: 10px;
+    text-align: left;
+    background-color: white;
+    width: 95%;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+}

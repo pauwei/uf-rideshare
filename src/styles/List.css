@@ -1,0 +1,9 @@
+.postitems {
+    list-style-type: none;
+}
+
+.forumlist {
+    background-color: #efefef;
+    width: 75%;
+    float: left;
+}

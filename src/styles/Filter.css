@@ -1,0 +1,11 @@
+.filterpanel {
+    background-color: #efefef;
+    width: 20%;
+    float: right;
+}
+
+.sort-by-date {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px;
+}
