@@ -8,9 +8,26 @@
     text-align: left;
     background-color: white;
     width: 95%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
 }
 
 .person {
-    display: flex;
-    justify-content: space-between;
+    width: 75%;
+}
+
+.tags {
+    text-align: center;
+}
+
+.tag {
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.icon {
+    margin-top: auto;
+    margin-bottom: auto;
 }

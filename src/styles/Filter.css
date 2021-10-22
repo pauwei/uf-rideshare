@@ -1,11 +1,61 @@
 .filterpanel {
     background-color: #efefef;
+    border-radius: 25px;
     width: 20%;
     float: right;
+    padding-bottom: 100px;
+    margin-right: 15px;
+    border-style: solid;
 }
 
 .sort-by-date {
     display: flex;
     justify-content: space-between;
     padding: 12px 12px;
+}
+
+.sort-date {
+    float: right;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sort-by-user {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px;
+}
+
+.sort-user {
+    float: right;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sort-by-city {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px;
+}
+
+.search-city {
+    float: right;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.search-by-date {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px;
+}
+
+.search-date {
+    float: right;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
 }

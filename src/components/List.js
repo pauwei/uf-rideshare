@@ -4,7 +4,7 @@ import postData from '../data/Posts.json';
 import '../styles/List.css';
 
 const List = (props) => {
-    const { query, date } = props;
+    const { query, date, user } = props;
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -39,8 +39,20 @@ const List = (props) => {
         });
     }
 
-    const updateFilter = (array, field, reverse) => {
+    const updateFilterDate = (array, field, reverse) => {
         const updatePosts = sort_by_key(array, field, reverse);
+
+        return updatePosts;
+    }
+
+    const updateFilterUser = (array) => {
+        const updatePosts = array.filter((post) => {
+            if (post.Type === user) {
+                return true;
+            }
+
+            return false;
+        });
 
         return updatePosts;
     }
@@ -60,13 +72,18 @@ const List = (props) => {
             update = updateQuery(list);
         }
 
-        //Filtering updates
+        //Filtering updates for sort date
         if (date !== "none") {
             if (date === "new") {
-                update = updateFilter(update, "Hours", false);
+                update = updateFilterDate(update, "Hours", false);
             } else if (date === "old" ) {
-                update = updateFilter(update, "Hours", true);
+                update = updateFilterDate(update, "Hours", true);
             }
+        }
+
+        //Filtering updates for user
+        if (user !== "none" && user.length > 0) {
+            update = updateFilterUser(update);
         }
 
         //Set update array
@@ -76,7 +93,7 @@ const List = (props) => {
             setPosts(list);
         }
 
-    }, [query, date, list])
+    }, [query, date, user, list])
 
     if (error) {
         return <>{error.message}</>;
@@ -89,7 +106,7 @@ const List = (props) => {
                 <ul className="postitems">
                     <article>
                         {posts.length !== 0 && posts.map(post => (
-                            <Card name={post.Name} msg={post.Msg} type={post.Type}/>
+                            <Card name={post.Name} msg={post.Msg} type={post.Type} tags={post.Tags}/>
                         ))}
                         {posts.length === 0 && 
                             <p>No posts matched the search terms.</p>

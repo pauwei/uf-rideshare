@@ -1,6 +1,23 @@
+.logo {
+    height: 130px;
+    width: 172px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
 .search-input {
     padding: 12px 20px;
-    margin: 8px 8px;
+    margin: auto;
     box-sizing: border-box;
-    width: 70%;
+    width: 50%;
+    border-radius: 20px;
+
+}
+
+.rideboard-title {
+    margin-top: auto;
+    margin-bottom: auto;
 }
