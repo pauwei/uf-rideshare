@@ -4,7 +4,7 @@ import '../styles/Filter.css';
 import "react-datepicker/dist/react-datepicker.css";
 
 const Filter = (props) => {
-    const { setDate, setUser, city, setCity, startDate, setStartDate } = props;
+    const { setDate, setUser, city, setCity, startDate, setStartDate, expire, setExpire } = props;
 
     return(
         <div className="filterpanel">
@@ -54,6 +54,15 @@ const Filter = (props) => {
                     />
                 </div>
 
+            </div>
+            <div className="sort-by-expire">
+                <p>Sort by Expired: </p>
+                <input
+                    name="sort-expire"
+                    type="checkbox"
+                    checked={expire}
+                    onChange={(e) => setExpire(e.target.checked)}
+                />
             </div>
         </div>
     );

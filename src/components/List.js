@@ -4,7 +4,7 @@ import postData from '../data/Posts.json';
 import '../styles/List.css';
 
 const List = (props) => {
-    const { query, date, user } = props;
+    const { query, date, user, expire, startDate } = props;
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -57,6 +57,28 @@ const List = (props) => {
         return updatePosts;
     }
 
+    const updateExpired = (array) => {
+        const updatePosts = array.filter((post) => {
+            return !post.Expire;
+        });
+
+        return updatePosts;
+    }
+
+    const updateDate = (array) => {
+        const updatePosts = array.filter((post) => {
+            const date = (startDate.getMonth() + 1) + "/" + startDate.getDate();
+
+            if (post.Msg.inludes(date)) {
+                return true;
+            }
+
+            return false;
+        })
+
+        return updatePosts;
+    }
+
     useEffect(() => {
         //Checked when first mounting
         if (!isLoaded) {
@@ -86,6 +108,10 @@ const List = (props) => {
             update = updateFilterUser(update);
         }
 
+        if (expire) {
+            update = updateExpired(update);
+        }
+
         //Set update array
         if (update) {
             setPosts(update);
@@ -93,7 +119,7 @@ const List = (props) => {
             setPosts(list);
         }
 
-    }, [query, date, user, list])
+    }, [query, date, user, list, expire, startDate])
 
     if (error) {
         return <>{error.message}</>;
@@ -106,7 +132,7 @@ const List = (props) => {
                 <ul className="postitems">
                     <article>
                         {posts.length !== 0 && posts.map(post => (
-                            <Card name={post.Name} msg={post.Msg} type={post.Type} tags={post.Tags}/>
+                            <Card name={post.Name} msg={post.Msg} type={post.Type} tags={post.Tags} profileURL={post.ProfileURL} postURL={post.PostURL}/>
                         ))}
                         {posts.length === 0 && 
                             <p>No posts matched the search terms.</p>

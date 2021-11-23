@@ -3,31 +3,52 @@
 }
 
 .ridearticle {
+    background-color: white;
+    border-radius: 15px;
     padding: 12px 12px;
     margin-top: 10px;
     text-align: left;
-    background-color: white;
     width: 95%;
+}
+
+.info {
     display: flex;
     justify-content: space-between;
-    border-radius: 15px;
+
 }
 
 .person {
-    width: 75%;
+    display: flex;
 }
 
 .tags {
-    text-align: center;
+    display: inline-block;
 }
 
 .tag {
+    display: inline-block;
     border-style: solid;
     border-radius: 20px;
-    padding: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-left: 10px;
 }
 
 .icon {
+    display: inline-block;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.name {
+    width: 25%;
+    display: inline-block;
+}
+
+.post {
+    width: 90%;
+}
+
+.btns {
+    text-align: right;
 }

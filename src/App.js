@@ -12,13 +12,14 @@ function App() {
   //City and date have not been updated for the list
   const [city, setCity] = useState("");
   const [startDate, setStartDate] = useState(new Date());
+  const [expire, setExpire] = useState(false);
 
   return (
     <div className="App">
       <Search query={query} setQuery={setQuery}/>
       <div>
-        <List query={query} date={date} user={user}/>
-        <Filter setDate={setDate} setUser={setUser} city={city} setCity={setCity} startDate={startDate} setStartDate={setStartDate}/>
+        <List query={query} date={date} user={user} expire={expire} startDate={startDate}/>
+        <Filter setDate={setDate} setUser={setUser} city={city} setCity={setCity} startDate={startDate} setStartDate={setStartDate} expire={expire} setExpire={setExpire}/>
       </div>
 
     </div>
